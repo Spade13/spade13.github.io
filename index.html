@@ -40,3 +40,20 @@
   
   animate();
 </script>
+<p id="myText">Hello World!</p>
+<style>
+  #myText {
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+</style>
+<script>
+  var text = document.getElementById('myText');
+  
+  window.addEventListener('scroll', function() {
+    var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    var center = window.innerHeight / 2;
+    text.style.top = scrollTop + center + 'px';
+  });
+</script>
