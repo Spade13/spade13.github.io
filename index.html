@@ -1,5 +1,96 @@
-<html lang = "en" >
-  <title>Spade</title>
-  <h1>Spade</h1>
-</html>
+<!DOCTYPE html>
+<html>
 
+<head>
+    <title>Spade</title>
+    <link rel="stylesheet" href="/path/to/style.css"> 
+</head>
+
+<body>
+    <style>
+        /* Style the menu bar */
+        .menu {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          background-color: #333;
+          color: #fff;
+          padding: 0 20px;
+        }
+      
+        /* Style the menu items */
+        .menu a {
+          color: #fff;
+          text-decoration: none;
+          font-size: 17px;
+        }
+      
+        /* Style the hamburger menu icon */
+        .menu .icon {
+          display: none;
+        }
+      </style>
+      
+      <!-- Create the menu bar -->
+      <div class="menu">
+        <!-- Add an image to the menu bar -->
+        <img src="/path/to/image.png" alt="Menu logo">
+        <!-- Add some menu items -->
+        <a href="#">Menu item 1</a>
+        <a href="#">Menu item 2</a>
+        <a href="#">Menu item 3</a>
+        <!-- Add the hamburger menu icon -->
+        <div class="icon">&#9776;</div>
+      </div>
+      
+      <script>
+        // Get the hamburger menu icon
+        var icon = document.querySelector(".icon");
+      
+        // Toggle the menu when the icon is clicked
+        icon.addEventListener("click", function() {
+          var menu = document.querySelector(".menu");
+          menu.classList.toggle("collapsed");
+        });
+      </script>
+      
+
+
+
+
+
+
+
+    <header>
+        <a href="https://www.youtube.com/@Spade13"> 
+            <img src = "resources/icons/youtube-dark-128x.png" alt = "youtube">
+        </a>
+        <a href = "https://twitter.com/thatSpade13">
+            <img src = "resources/icons/twitter-dark-128x.png" alt = "twitter">
+        </a>
+        <a href = "https://www.tiktok.com/@thatspade13">
+            <img src = "resources/icons/tiktok-dark-128x.png" alt = "tiktok">
+        </a>
+        <a href = "https://github.com/Spade13">
+            <img src = "resources/icons/github.png" alt = "github">
+        </a>
+        <a href = "https://patreon.com/Spade13">
+            <img src = "resources/icons/patreon-dark-128x.png" alt = "patreon">
+        </a>
+        <!--Empty Links-->
+        <a href = "">
+            <img src = "resources/icons/facebook-dark-128x.png" alt = "facebook">
+        </a>
+        <a href = "">
+            <img src = "resources/icons/twitch-dark-128x.png" alt = "twitch">
+        </a>
+        <a href = "">
+            <img src = "resources/icons/instagram-dark-128x.png" alt = "github">
+        </a>
+        <a href = "">
+            <img src = "resources/icons/discord-dark-128x.png" alt = "github">
+        </a>
+    </header>   
+</body>
+
+</html>
