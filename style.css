@@ -39,5 +39,7 @@ a:hover {
   transition-timing-function: ease-in-out;
 }
 :hover {
-  transform: scale(1.1);
+  transform: scale(1.001);
+  transition-duration: 250ms;
+  transition-timing-function: ease-in-out;
 }
